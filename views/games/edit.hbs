@@ -1,0 +1,50 @@
+<h1>Edit</h1>
+<a class='btn btn-info' href='/games'>Return to Game List</a>
+
+<form method='post'>
+    <fieldset class='form-group'>
+        <label for='name' class='control-label col-2'>Name*</label>
+        <input class='form-control' name='name' id='name' value='{{game.name}}' required> 
+    </fieldset>
+    <fieldset class='form-group'>
+        <label for='dev' class='control-label col-2'>Developer</label>
+        <input class='form-control' name='dev' id='dev' value='{{game.dev}}'> 
+    </fieldset>
+    <fieldset class='form-group'>
+        <label for='platform' class='control-label col-2'>Platform</label>
+        <select class='form-control' name='platform' id='platform' selected='{{game.platform}}'>
+            <option value='Xbox One S/X'>Xbox One S/X</option>
+            <option value='Xbox Series S/X'>Xbox Series S/X</option>
+            <option value='PS4/PS4 Pro'>PS4/PS4 Pro</option>
+            <option value='PS5'>PS5</option>
+            <option value='Nintendo Switch'>Nintendo Switch</option>
+            <option value='Steam'>Steam</option>
+            <option value='Epic Games Store'>Epic Games Store</option>
+            <option value='Other'>Other</option>
+        </select>
+    </fieldset>
+    <fieldset class='form-group'>
+            <label for='trailer' class='control-label col-2'>Trailer</label>
+            <input class='form-control' name='trailer' id='trailer' value='{{game.trailer}}'> 
+    </fieldset>
+    <fieldset class='form-group'>
+        <label for='releaseDate' class='control-label col-2'>Release Date*</label>
+        <input type='date' class='form-control' name='releaseDate' id='releaseDate' value='{{game.releaseDate}}' required> 
+    </fieldset>
+    <fieldset class='form-group'>
+        <label for='purchased' class='control-label col-2'>Purchased*</label>
+        <select class='form-control' name='purchased' id='purchased' selected='{{game.purchased}}' required>
+            <option>---Please choose one---</option>
+            <option value='Owned'>Yes, I own it</option>
+            <option value='Pre-Ordered'>Yes, I have Pre-Ordered it</option>
+            <option value='No'>No</option>
+        </select> 
+    </fieldset>
+    <fieldset class='form-group'>
+            <label for='timePlayed' class='control-label col-2'>Time Played(Hours)</label>
+            <input type='number' class='form-control' name='timePlayed' id='timePlayed' value={{game.timePlayed}}> 
+    </fieldset>
+    <div class=''>
+        <button class='btn btn-primary'>Submit</button>
+    </div>
+</form>

@@ -1,9 +1,10 @@
+// Load the express package and create a router
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+// GET: '/' => Home Page
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'PlayCalendar' });
 });
 
 module.exports = router;

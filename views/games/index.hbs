@@ -1,0 +1,22 @@
+<h1>Your Games</h1>
+<a class="nav-link active" aria-current="page" href="/games/create">Add a Game</a>
+
+<section class='row card-group'>
+    {{#each games}}
+        <div class='col-sm-6 col-lg-4 mb-3'>
+            <div class='card mb-4 text-center h-100'>
+                <div class='card-body'>
+                    <h3>{{this.name}}</h3>
+                    <h4>{{this.dev}}</h4>
+                    <p>{{this.platform}}</p>
+                    <p>{{this.releaseDate}}</p>
+                    <p>{{this.trailer}}</p>
+                    <p>{{this.purchased}}</p>
+                    <p>{{this.timePlayed}}</p>
+                        <a href='/games/edit/{{this._id}}' class='btn btn-info text-light'>Edit</a>
+                        <a href='/games/delete/{{this._id}}' class='btn btn-danger' onclick='return confirmDelete()'>Delete</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</section>

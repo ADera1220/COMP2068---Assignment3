@@ -1,0 +1,33 @@
+<h1>Add a Game</h1>
+<a class='btn btn-info' href='/games'>Return to Game List</a>
+
+<form method='post'>
+    <fieldset class='form-group'>
+        <label for='name' class='control-label col-2'>Name</label>
+        <input class='form-control' name='name' id='name' required> 
+    </fieldset>
+    <fieldset class='form-group'>
+        <label for='dev' class='control-label col-2'>Developer</label>
+        <input class='form-control' name='dev' id='dev'> 
+    </fieldset>
+    <fieldset class='form-group'>
+        <label for='platform' class='control-label col-2'>Platform</label>
+        <select class='form-control' name='platform' id='platform'>
+            <option value='xbone'>Xbox One S/X</option>
+            <option value='xseries'>Xbox Series S/X</option>
+            <option value='ps4'>PS4/PS4 Pro</option>
+            <option value='ps5'>PS5</option>
+            <option value='switch'>Nintendo Switch</option>
+            <option value='steam'>Steam</option>
+            <option value='epic'>Epic Games Store</option>
+            <option value='other'>Other</option>
+        </select>
+    </fieldset>
+    <fieldset class='form-group'>
+        <label for='releaseDate' class='control-label col-2'>Release Date</label>
+        <input type='date' class='form-control' name='releaseDate' id='releaseDate' required> 
+    </fieldset>
+    <div class=''>
+        <button class='btn btn-primary'>Submit</button>
+    </div>
+</form>
