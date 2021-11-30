@@ -1,33 +1,38 @@
-<h1>Add a Game</h1>
-<a class='btn btn-info' href='/games'>Return to Game List</a>
-
-<form method='post'>
-    <fieldset class='form-group'>
-        <label for='name' class='control-label col-2'>Name</label>
-        <input class='form-control' name='name' id='name' required> 
-    </fieldset>
-    <fieldset class='form-group'>
-        <label for='dev' class='control-label col-2'>Developer</label>
-        <input class='form-control' name='dev' id='dev'> 
-    </fieldset>
-    <fieldset class='form-group'>
-        <label for='platform' class='control-label col-2'>Platform</label>
-        <select class='form-control' name='platform' id='platform'>
-            <option>Xbox One S/X</option>
-            <option>Xbox Series S/X</option>
-            <option>PS4/PS4 Pro</option>
-            <option>PS5</option>
-            <option>Nintendo Switch</option>
-            <option>Steam</option>
-            <option>Epic Games Store</option>
-            <option>Other</option>
-        </select>
-    </fieldset>
-    <fieldset class='form-group'>
-        <label for='releaseDate' class='control-label col-2'>Release Date</label>
-        <input type='date' class='form-control' name='releaseDate' id='releaseDate' required> 
-    </fieldset>
-    <div class=''>
-        <button class='btn btn-primary'>Submit</button>
+<div class='inner-container col-6 rounded-3'>
+    <div class='text-center'>
+        <h1>Add a Game</h1>
+        <a class='btn btn-primary' href='/games'>Return to Game List</a>
     </div>
-</form>
+    <form method='post'>
+        <div class='rounded-3'>
+            <fieldset class='form-floating'>
+                <input class='form-control' name='name' id='name' required> 
+                <label for='name' class='control-label col-2'>Name</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                <input class='form-control' name='dev' id='dev'> 
+                <label for='dev'>Developer</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                <select class='form-control' name='platform' id='platform'>
+                    <option>Xbox One S/X</option>
+                    <option>Xbox Series S/X</option>
+                    <option>PS4/PS4 Pro</option>
+                    <option>PS5</option>
+                    <option>Nintendo Switch</option>
+                    <option>Steam</option>
+                    <option>Epic Games Store</option>
+                    <option>Other</option>
+                </select>
+                <label for='platform'>Platform</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                <input type='date' class='form-control' name='releaseDate' id='releaseDate' required> 
+                <label for='releaseDate'>Release Date</label>
+            </fieldset>
+        </div>
+        <div class='text-center'>
+            <button class='btn btn-primary'>Submit</button>
+        </div>
+    </form>
+</div>

@@ -1,40 +1,37 @@
-<h1>Login to your PlayCalendar Account!</h1>
-
-<form method='post'>
-    <div class="row g-2">
-        <div class="col-md">
-            <div class="form-floating">
+<div class='inner-container col-6 rounded-3'>
+    <div class='text-center'>
+        <h1>Register with PlayCalendar</h1>
+    </div>
+    <form method='post'>
+        <div class="rounded-3">
+            <fieldset class='form-floating'>
                 <input type="email" class="form-control" id="username" name="username" placeholder="name@example.com" required>
                 <label for="username">Email address*</label>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="form-floating">
+            </fieldset>
+            <fieldset class='form-floating'>
                 <input type="password" class="form-control" id="password" name="password" placeholder="testpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 <label for="password">Password*</label>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="form-floating">
+            </fieldset>
+            <fieldset class='form-floating'>
                 <input type="password" class="form-control" id="confirm" name="confirm" placeholder="testpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 <label for="confirm">Confirm*</label>
-            </div>
+            </fieldset>
         </div>
-    </div>
-    <div class="d-grid gap-2">
-        <button class="btn btn-primary">Register</button>
-        <hr />
-        <h3>Log in with an outside provider</h3>
-           <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <li><a class="dropdown-item" href="/github">GitHub</a></li>
-                    <li><a class="dropdown-item" href="/google">Google</a></li>
-                </ul>
-            </div>
-        <hr />
-        <a class="btn btn-primary">Have an Account? Login</a>
-    </div>
-</form>
+        <div class="text-center">
+            <button class="btn btn-primary">Register</button>
+            <hr />
+            <h3>Log in with an outside provider</h3>
+            <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <li><a class="dropdown-item" href="/github">GitHub</a></li>
+                        <li><a class="dropdown-item" href="/google">Google</a></li>
+                    </ul>
+                </div>
+            <hr />
+            <a class="btn btn-primary" href='/login'>Have an Account? Login</a>
+        </div>
+    </form>
+</div>

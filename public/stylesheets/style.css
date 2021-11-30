@@ -1,32 +1,65 @@
 body {
   padding: 50px;
-  font: 14px "Roboto Mono", Helvetica, Arial, sans-serif;
+  font: 20px "Roboto Mono", Helvetica, Arial, sans-serif;
   color: #212121;
+  background-color: #F0F0F0;
+}
+
+nav {
+  background-color: #B2DFDB;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 a {
   color: #00B7FF;
 }
 
-iframe {
-  height: 390px;
-  width: 520px;
+.form-floating {
+  height: 200%;
+  padding: 10px 10px;
 }
 
-.btn-secondary {
+.responsive-iframe {
+  position: rerlative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 160%;
+}
+
+.btn-primary {
+  background-color: #00796B;
+}
+
+.btn-primary:hover {
+  background-color: #009688;
+}
+
+.btn-primary:active {
   background-color: #00BCD4;
 }
 
-.dropdown-item {
+.btn-secondary:hover {
+  background-color: #54c5d4;
+}
+
+.dropdown-item:hover {
   background-color: #BDBDBD;
 }
 
-.card {
-  width: 50%
+.inner-container {
+  margin: 10px;
+  padding: 10px;
+  background-color: #BDBDBD;
 }
 
 .card-body {
@@ -38,6 +71,7 @@ iframe {
 
 .card-group {
   margin: 10px;
+  padding-top: 10px;
   background-color: #BDBDBD;
 }
 
@@ -55,4 +89,21 @@ p.card-group {
 
 .bg-light {
   color: #B2DFDB;
+}
+
+.navbar {
+  background-color: #B2DFDB;
+}
+
+.nav-link:hover {
+  background-color: #009688;
+  -webkit-box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-brand:hover {
+  -webkit-box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
 }

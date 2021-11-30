@@ -1,50 +1,56 @@
-<h1>Edit</h1>
-<a class='btn btn-info' href='/games'>Return to Game List</a>
-
-<form method='post'>
-    <fieldset class='form-group'>
-        <label for='name' class='control-label col-2'>Name*</label>
-        <input class='form-control' name='name' id='name' value='{{game.name}}' required> 
-    </fieldset>
-    <fieldset class='form-group'>
-        <label for='dev' class='control-label col-2'>Developer</label>
-        <input class='form-control' name='dev' id='dev' value='{{game.dev}}'> 
-    </fieldset>
-    <fieldset class='form-group'>
-        <label for='platform' class='control-label col-2'>Platform</label>
-        <select class='form-select' aria-label='Default select example' name='platform' id='platform' selected={{game.platform}}>
-            <option value="" selected disabled hidden>Choose a Platform</option>
-            <option>Xbox One S/X</option>
-            <option>Xbox Series S/X</option>
-            <option>PS4/PS4 Pro</option>
-            <option>PS5</option>
-            <option>Nintendo Switch</option>
-            <option>Steam</option>
-            <option>Epic Games Store</option>
-            <option>Other</option>
-        </select>
-    </fieldset>
-    <fieldset class='form-group'>
-            <label for='trailer' class='control-label col-2'>Trailer link(YouTube only)</label>
-            <input class='form-control' name='trailer' id='trailer' value='https://www.youtube.com/embed/{{game.trailer}}'> 
-    </fieldset>
-    <fieldset class='form-group'>
-        <label for='releaseDate' class='control-label col-2'>Release Date*</label>
-        <input type='date' class='form-control' name='releaseDate' id='releaseDate' value={{game.releaseDate}} required> 
-    </fieldset>
-    <fieldset class='form-group'>
-        <label for='purchased' class='control-label col-2'>Purchased*</label>
-        <select class='form-select' aria-label='Default select example' name='purchased' id='purchased' value='{{game.purchased}}' required>
-            <option>Yes, I own it</option>
-            <option>Yes, I have Pre-Ordered it</option>
-            <option>No</option>
-        </select> 
-    </fieldset>
-    <fieldset class='form-group'>
-            <label for='timePlayed' class='control-label col-2'>Time Played(Hours)</label>
-            <input type='number' class='form-control' name='timePlayed' id='timePlayed' value={{game.timePlayed}}> 
-    </fieldset>
-    <div class=''>
-        <button class='btn btn-primary'>Submit</button>
+<div class='inner-container col-6 rounded-3'>
+    <div class='text-center'>
+        <h1>Edit</h1>
+        <a class='btn btn-primary' href='/games'>Return to Game List</a>
     </div>
-</form>
+
+    <form method='post'>
+        <div class='rounded-3'>
+            <fieldset class='form-floating'>
+                <input class='form-control' name='name' id='name' value='{{game.name}}' required> 
+                <label for='name'>Name*</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                <input class='form-control' name='dev' id='dev' value='{{game.dev}}'> 
+                <label for='dev'>Developer</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                <select class='form-select' aria-label='Default select example' name='platform' id='platform' selected={{game.platform}}>
+                    <option value="" selected disabled hidden>Choose a Platform</option>
+                    <option>Xbox One S/X</option>
+                    <option>Xbox Series S/X</option>
+                    <option>PS4/PS4 Pro</option>
+                    <option>PS5</option>
+                    <option>Nintendo Switch</option>
+                    <option>Steam</option>
+                    <option>Epic Games Store</option>
+                    <option>Other</option>
+                </select>
+                <label for='platform'>Platform</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                    <input class='form-control' name='trailer' id='trailer' value='https://www.youtube.com/embed/{{game.trailer}}'> 
+                    <label for='trailer'>Trailer link(YouTube only)</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                <input type='date' class='form-control' name='releaseDate' id='releaseDate' value={{game.releaseDate}} required> 
+                <label for='releaseDate'>Release Date*</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                <select class='form-select' aria-label='Default select example' name='purchased' id='purchased' value='{{game.purchased}}' required>
+                    <option>Yes, I own it</option>
+                    <option>Yes, I have Pre-Ordered it</option>
+                    <option>No</option>
+                </select> 
+                <label for='purchased'>Purchased*</label>
+            </fieldset>
+            <fieldset class='form-floating'>
+                    <input type='number' class='form-control' name='timePlayed' id='timePlayed' value={{game.timePlayed}}> 
+                    <label for='timePlayed'>Time Played(Hours)</label>
+            </fieldset>
+        </div>
+        <div class='text-center'>
+            <button class='btn btn-primary'>Submit</button>
+        </div>
+    </form>
+</div>

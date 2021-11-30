@@ -39,8 +39,13 @@ router.get('/register', (req, res, next) => {
 
 // GET: '/login' => User Login Page
 router.get('/login', (req, res, next) => {
+  //Create an array of seecion messsages, to handle any issues in the login process
+  let messages = req.session.messages || [];
+  req.session.messages = [];
+
   res.render('login', {
     title: 'Login | PlayCalendar',
+    messages: messages
   });
 });
 

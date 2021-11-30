@@ -1,17 +1,17 @@
 <h1>Your Games</h1>
-<a class="btn btn-primary active" aria-current="page" href="/games/create">Add to my games</a>
-<a class="btn btn-primary active" aria-current="page" href="/games/">Back to the main list</a>
+<a class="btn btn-primary" aria-current="page" href="/games/create">Add to my games</a>
+<a class="btn btn-primary" aria-current="page" href="/games/">Back to the main list</a>
 
 <section class='row card-group rounded-3'>
     {{#each games}}
         <div class='col-lg-6 col-lg-4 mb-3'>
             <div class='card mb-4 h-100'>
                 <div class='card-body rounded-3'>
-                    <div class='float-start'>
+                    <div>
                         {{!-- iframe element used to embed youtube videos for each available trailer --}}
-                        <iframe src='https://www.youtube.com/embed/{{this.trailer}}'></iframe>
+                        <iframe class='responsive-iframe' src='https://www.youtube.com/embed/{{this.trailer}}'></iframe>
                     </div>
-                    <div class='float-start'></div>
+                    <div>
                         <h3>{{this.name}}</h3>
                         <h4>{{this.dev}}</h4>
                         <p><strong>{{this.platform}}</strong></p>
