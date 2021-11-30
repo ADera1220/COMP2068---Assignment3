@@ -19,12 +19,13 @@ const gameSchema = new mongoose.Schema({
         trim: true
     },
     releaseDate: {
-        type: Date,
+        type: String,
         required: true
     },
     trailer: String,
     purchased: String,
-    timePlayed: Number
+    timePlayed: Number,
+    user: String
 });
 
 // Export the model with the name 'Games', so it is public

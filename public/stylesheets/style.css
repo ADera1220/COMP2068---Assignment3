@@ -1,8 +1,58 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Roboto Mono", Helvetica, Arial, sans-serif;
+  color: #212121;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 a {
   color: #00B7FF;
+}
+
+iframe {
+  height: 390px;
+  width: 520px;
+}
+
+.btn-secondary {
+  background-color: #00BCD4;
+}
+
+.dropdown-item {
+  background-color: #BDBDBD;
+}
+
+.card {
+  width: 50%
+}
+
+.card-body {
+  background-color: #00796B;
+  -webkit-box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 11px 26px 0px rgba(0,0,0,0.75);
+}
+
+.card-group {
+  margin: 10px;
+  background-color: #BDBDBD;
+}
+
+h3.card-group {
+  font-size: 20px;
+}
+
+h4.card-group {
+  font-size: 18px;
+}
+
+p.card-group {
+  font-size: 16px;;
+}
+
+.bg-light {
+  color: #B2DFDB;
 }
